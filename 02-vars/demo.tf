@@ -2,7 +2,12 @@ variable "sample" {
   default = "Hello world"
 }
 
-output "sampl-op" {
+output "sample-op" {
+    value = var.sample
+}
+
+
+output "sample-op" {
     value = var.sample
 }
 
