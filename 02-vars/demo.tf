@@ -46,5 +46,5 @@ variable "example-map" {
 }
 
 output "ex-map" {
-    value = "Welcome to ${var.example-map[]}"
+    value = "Welcome to ${var.example-map["Class"]} Training and the training timings are ${var.example-map["Timings"]} "
 }
