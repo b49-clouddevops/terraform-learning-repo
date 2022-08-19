@@ -37,4 +37,6 @@ output "ex-list" {
 }
 
 
-variable "exmaple-map"
+variable "exmaple-map" {
+    
+}
