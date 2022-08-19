@@ -16,4 +16,10 @@ variable "number" {
     default = 100 
 }
 
+output "number" {
+    value = var.number
+}
 
+variable "example-list" {
+    
+}
