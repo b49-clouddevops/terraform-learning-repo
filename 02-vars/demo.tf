@@ -21,6 +21,7 @@ output "number" {
     value = var.number
 }
 
+# List variable
 variable "example-list" {
     default = [
         "DevOps",
@@ -28,4 +29,10 @@ variable "example-list" {
         false,
         "Verma"
     ]
+}
+
+#Printing a list variable 
+
+output "ex-list" {
+    
 }
