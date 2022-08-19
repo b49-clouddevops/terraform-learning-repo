@@ -36,11 +36,15 @@ output "ex-list" {
     value = "Welcome to ${var.example-list[0]} Training, Trainer name is ${var.example-list[3]}, Training duration is ${var.example-list[1]} hours"
 }
 
-
+# Declaring a map variable
 variable "example-map" {
     deault = {
         Class    = "DevOps",
         Timings  = "0730AMIST",
         Duration = 85
     }
+}
+
+output "ex-map" {
+    
 }
