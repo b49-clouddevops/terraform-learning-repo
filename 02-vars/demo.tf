@@ -7,7 +7,7 @@ output "sample-op" {
 }
 
 # Both the output syntaxes are valid
-output "sample-op" {
+output "sample-op1" {
     value = "value is ${var.sample}"
 }
 
