@@ -24,7 +24,7 @@ output "number" {
 # List variable
 variable "example-list" {
     default = [
-        "DevOps",
+        "DevOps", 
         100,
         false,
         "Verma"
@@ -34,5 +34,9 @@ variable "example-list" {
 #Printing a list variable 
 
 output "ex-list" {
-    value = "Welcome to ${var.}"
+    value = "Welcome to ${varexample-list}"
 }
+
+
+[a , b , d, c, e, f]
+ 0  1   2  3  4
