@@ -39,7 +39,8 @@ output "ex-list" {
 
 variable "example-map" {
     deault = {
-        Class = "DevOps",
-        Timings 
+        Class    = "DevOps",
+        Timings  = "0730AMIST",
+        Duration = 85
     }
 }
