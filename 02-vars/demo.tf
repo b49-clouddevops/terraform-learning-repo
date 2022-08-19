@@ -34,5 +34,5 @@ variable "example-list" {
 #Printing a list variable 
 
 output "ex-list" {
-    
+    value = "Welcome to ${var.}"
 }
