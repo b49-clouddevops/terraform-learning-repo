@@ -11,6 +11,7 @@ output "sample-op1" {
     value = "value is ${var.sample}"
 }
 
+# A variable can be accessed by either var.varName or ${var.varName}
 
 variable "number" {
     default = 100 
