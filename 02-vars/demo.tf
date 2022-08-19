@@ -34,7 +34,7 @@ variable "example-list" {
 #Printing a list variable 
 
 output "ex-list" {
-    value = "Welcome to ${varexample-list[0]} Training, Trainer name is "
+    value = "Welcome to ${var.example-list[0]} Training, Trainer name is ${var.example-list[3]}, Training duration is ${var.example-list[0]}"
 }
 
 
