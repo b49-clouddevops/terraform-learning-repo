@@ -31,9 +31,10 @@ variable "example-list" {
     ]
 }
 
-#Printing a list variable 
+# Printing a list variable 
 output "ex-list" {
     value = "Welcome to ${var.example-list[0]} Training, Trainer name is ${var.example-list[3]}, Training duration is ${var.example-list[1]} hours"
 }
 
 
+variable "exmaple-map"
