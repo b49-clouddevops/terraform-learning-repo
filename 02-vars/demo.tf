@@ -38,7 +38,7 @@ output "ex-list" {
 
 # Declaring a map variable
 variable "example-map" {
-    deault = {
+    default = {
         Class    = "DevOps",
         Timings  = "0730AMIST",
         Duration = 85
