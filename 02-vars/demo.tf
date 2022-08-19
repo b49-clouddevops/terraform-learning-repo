@@ -21,5 +21,10 @@ output "number" {
 }
 
 variable "example-list" {
-    
+    default = [
+        "DevOps",
+        100,
+        false,
+        "Verma"
+    ]
 }
