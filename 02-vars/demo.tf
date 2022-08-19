@@ -38,5 +38,5 @@ output "ex-list" {
 
 
 variable "example-map" {
-    value = 
+    deault = 
 }
