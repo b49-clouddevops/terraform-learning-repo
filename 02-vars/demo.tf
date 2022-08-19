@@ -37,6 +37,6 @@ output "ex-list" {
 }
 
 
-variable "exmaple-map" {
-    
+variable "example-map" {
+    value = 
 }
