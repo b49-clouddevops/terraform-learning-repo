@@ -46,5 +46,5 @@ variable "example-map" {
 }
 
 output "ex-map" {
-    
+    value = "Welcome to ${var.example-map[]}"
 }
