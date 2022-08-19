@@ -8,6 +8,7 @@ This repo contains all the basics of terraform.
 Initialises the code and downloads the required plugins!!!!
 ```
 
+
 # terraform plan 
 
 # terraform apply 
