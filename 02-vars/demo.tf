@@ -48,3 +48,18 @@ variable "example-map" {
 output "ex-map" {
     value = "Welcome to ${var.example-map["Class"]} Training and the training timings are ${var.example-map["Timings"]} and the duration of the over all training is ${var.example-map["Duration"]} "
 }
+
+
+###############
+
+variable "city" {}
+
+output "city-name" {
+    value = "Name of the city where trainer resides is ${var.city}"
+}
+
+variable "state" {}
+
+output "state-name" {
+    value = "Name of the state where trainer resides is ${var.state}"
+}
