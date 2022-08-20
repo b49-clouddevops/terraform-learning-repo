@@ -1,6 +1,6 @@
 # Creates EC2
 resource "aws_instance" "b49-ec2" {
-  ami           = "ami-0aa718de62aea6fbe"
+  ami           = "ami-052d9bac7baef4290"
   instance_type = "t2.micro"
 
   tags = {
