@@ -11,8 +11,3 @@ resource "aws_instance" "b49-ec2" {
 }
 
 
-What is the main moto of terraform 
-1) No Manual changes on console
-2) Every change should be versioned and will be applied only after a PR.
-
-ATLAS ( mongo ) :
