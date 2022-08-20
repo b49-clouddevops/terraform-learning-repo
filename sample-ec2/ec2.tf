@@ -11,7 +11,6 @@ resource "aws_instance" "b49-ec2" {
   }
 }
 
-
 # Creating security group
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
@@ -37,3 +36,5 @@ resource "aws_security_group" "allow_ssh" {
     Name = "allow_ssh"
   }
 }
+
+
