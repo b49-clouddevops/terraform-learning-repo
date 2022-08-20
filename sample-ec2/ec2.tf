@@ -8,4 +8,7 @@ resource "aws_instance" "b49-ec2" {
 }
 
 
-output ""
+output "privateip" {
+   value  = aws_instance
+}
+
