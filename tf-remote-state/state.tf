@@ -1,7 +1,7 @@
 terraform {
   backend "s2" {
-    bucket = "mybucket"
-    key    = "path/to/my/key"
+    bucket = "b49-rf-remote-state-bucket"
+    key    = "sample/terraform.tfstate"
     region = "us-east-1"
   }
 }
