@@ -22,4 +22,7 @@ Shows you the plan that it's going to do when you apply. Based on the plan, you 
 ```
 
 
-### attrib
+### attribute vs argument 
+
+Arguement : Is the property that we give for the system to build
+Attrib
