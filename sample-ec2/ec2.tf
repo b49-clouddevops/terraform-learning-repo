@@ -6,3 +6,6 @@ resource "aws_instance" "b49-ec2" {
     Name = "my-first-ec2"
   }
 }
+
+
+instance_type
