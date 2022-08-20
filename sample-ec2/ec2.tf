@@ -12,3 +12,5 @@ resource "aws_instance" "b49-ec2" {
 
 
 
+
+
