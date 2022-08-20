@@ -52,14 +52,14 @@ output "ex-map" {
 
 ###############
 
-variable "city" {}
-
-output "co-name" {
-    value = "Name of the city where trainer resides is ${var.city}"
-}
-
 variable "state" {}
 
 output "state-name" {
+    value = "Name of the state where trainer resides is ${var.city}"
+}
+
+variable "country" {}
+
+output "country-name" {
     value = "Name of the state where trainer resides is ${var.state}"
 }
