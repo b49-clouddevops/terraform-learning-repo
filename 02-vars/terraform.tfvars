@@ -1,1 +1,1 @@
-state   = "Karnataka"
+# state   = "Karnataka"
