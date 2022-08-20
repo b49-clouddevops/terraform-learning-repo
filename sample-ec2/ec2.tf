@@ -8,4 +8,4 @@ resource "aws_instance" "b49-ec2" {
 }
 
 
-instance_type
+output ""
