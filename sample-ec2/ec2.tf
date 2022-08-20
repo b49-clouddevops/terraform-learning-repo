@@ -1,3 +1,4 @@
+# Creates EC2
 resource "aws_instance" "b49-ec2" {
   ami           = "ami-00ff427d936335825"
   instance_type = "t2.micro"
@@ -9,6 +10,6 @@ resource "aws_instance" "b49-ec2" {
 
 
 output "privateip" {
-   value  = aws_instance
+   value  = aws_instance.b49-ec2.private_ip  # private_ip is the attribute
 }
 
