@@ -55,11 +55,11 @@ output "ex-map" {
 variable "state" {}
 
 output "state-name" {
-    value = "Name of the state where trainer resides is ${var.city}"
+    value = "Name of the state where trainer resides is ${var.state}"
 }
 
 variable "country" {}
 
 output "country-name" {
-    value = "Name of the state where trainer resides is ${var.state}"
+    value = "Name of the country where trainer resides is ${var.country}"
 }
