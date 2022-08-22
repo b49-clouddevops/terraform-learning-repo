@@ -12,9 +12,3 @@ output "pub-ip" {
 }
 
 
-fun () {
-  a =10 
-  echo $a  
-}
-
-fun 
