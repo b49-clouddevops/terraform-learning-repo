@@ -10,3 +10,11 @@ module "sg" {
 output "pub-ip" {
   value = module.ec2.pub-ip
 }
+
+
+fun () {
+  a =10 
+  echo $a  
+}
+
+fun 
