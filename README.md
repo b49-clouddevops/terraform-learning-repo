@@ -26,3 +26,8 @@ Shows you the plan that it's going to do when you apply. Based on the plan, you 
 
 Arguement : Is the property that we give for the system to build  [ AMI_ID ]
 Attribute : Is the property which we use once the system comesup  [ private_ip ]
+
+```
+Major pain point in terraform is you cannot pass the info /outputs from one module to another module directly.
+Instead you first needs to send the info to ROOT Module and from the root Module you can pass it to any module
+```

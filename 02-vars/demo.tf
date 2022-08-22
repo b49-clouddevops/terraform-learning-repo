@@ -51,7 +51,6 @@ output "ex-map" {
 
 
 ###############
-
 variable "state" {}
 
 output "state-name" {
