@@ -4,13 +4,20 @@ resource "aws_instance" "b49-ec2" {
   instance_type           = "t3.micro"
   vpc_security_group_ids  = [var.sg]
 
-  provisioner "local-exec" {   # To do something on the machine where you're running the terraform
-    command = <<EOF 
-sleep 40 
-cd /home/centos/ansible 
-ansible-playbook -i ${self.public_ip} -e ENV=dev -e COMPONENT=frontend -e TAG_NAME=0.0.2 -e ansible_user=centos -e ansible_password=DevOps321 roboshop-push.yml  
-EOF
-   }
+  connection {
+    type     = "ssh"
+    user     = "root"
+    password = var.root_password
+    host     = self.public_ip
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "puppet apply",
+      "consul join ${aws_instance.web.private_ip}",
+    ]
+  }
+
 }
 
 variable "sg" {}
