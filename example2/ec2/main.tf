@@ -8,7 +8,7 @@ resource "aws_instance" "b49-ec2" {
   provisioner "local-exec" {
     command = <<EOF 
         cd /home/centos/ansible 
-        ansible-playbook -i machineIP
+        ansible-playbook -i IPAddressOfTheCreatedMachine 
   
     EOF 
    }
