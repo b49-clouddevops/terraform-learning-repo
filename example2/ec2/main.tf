@@ -10,7 +10,6 @@ resource "aws_instance" "b49-ec2" {
      "ansible-pull -U https://github.com/b49-clouddevops/ansible.git -e COMPONENT=frontend -e ENV=dev -e TAG_NAME=0.0.2 roboshop.yml"
     ]
   }
-
 }
 
 variable "sg" {}
