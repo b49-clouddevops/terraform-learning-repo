@@ -4,7 +4,6 @@ resource "aws_instance" "b49-ec2" {
   instance_type           = "t3.micro"
   vpc_security_group_ids  = [var.sg]
 
-
   provisioner "local-exec" {   # To do something on the machine where you're running the terraform
     command = <<EOF 
         sleep 40 
