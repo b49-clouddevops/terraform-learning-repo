@@ -13,7 +13,7 @@ resource "aws_spot_instance_request" "cheap_worker" {
       connection {
         type     = "ssh"
         user     = "centos"
-        password = DevOps321
+        password = "DevOps321"
         host     = self.public_ip
       }
 
