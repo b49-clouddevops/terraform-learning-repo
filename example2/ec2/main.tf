@@ -6,9 +6,9 @@ resource "aws_instance" "b49-ec2" {
 
   provisioner "local-exec" {   # To do something on the machine where you're running the terraform
     command = <<EOF 
-        sleep 40 
-        cd /home/centos/ansible 
-        ansible-playbook -i ${self.public_ip} -e ENV=dev -e COMPONENT=frontend -e TAG_NAME=0.0.2 -e ansible_user=centos -e ansible_password=DevOps321 roboshop-push.yml  
+sleep 40 
+cd /home/centos/ansible 
+ansible-playbook -i ${self.public_ip} -e ENV=dev -e COMPONENT=frontend -e TAG_NAME=0.0.2 -e ansible_user=centos -e ansible_password=DevOps321 roboshop-push.yml  
 EOF
    }
 }
