@@ -9,7 +9,7 @@ resource "aws_instance" "b49-ec2" {
     command = <<EOF 
         sleep 40 
         cd /home/centos/ansible 
-        ansible-playbook -i ${self.private_ip} roboshop-push.yml -e ENV=dev  -e COMPONENT=frontend -e TAG_NAME=0.0.2 roboshop-push.yml  
+        ansible-playbook -i ${self.public_ip} roboshop-push.yml -e ENV=dev  -e COMPONENT=frontend -e TAG_NAME=0.0.2 roboshop-push.yml  
     EOF 
    }
 }
