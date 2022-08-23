@@ -7,6 +7,7 @@ resource "aws_instance" "b49-ec2" {
 
   provisioner "local-exec" {
     command = <<EOF 
+        sleep 40 
         cd /home/centos/ansible 
         ansible-playbook -i IPAddressOfTheCreatedMachine roboshop-push.yml -e ENV=dev  -e COMPONENT=frontend -e TAG_NAME=0.0.2 roboshop-push.yml  
     EOF 
