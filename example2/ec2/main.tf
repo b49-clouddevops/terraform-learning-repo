@@ -5,6 +5,10 @@ resource "aws_instance" "b49-ec2" {
   vpc_security_group_ids  = [var.sg]
 
 
+  provisioner "local-exec" {
+    command = "echo ${self.private_ip} >> private_ips.txt"
+  }
+
 }
 
 variable "sg" {}
