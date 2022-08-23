@@ -4,17 +4,10 @@ resource "aws_instance" "b49-ec2" {
   instance_type           = "t3.micro"
   vpc_security_group_ids  = [var.sg]
 
-  connection {
-    type     = "ssh"
-    user     = "root"
-    password = var.root_password
-    host     = self.public_ip
-  }
 
   provisioner "remote-exec" {
     inline = [
-      "puppet apply",
-      "consul join ${aws_instance.web.private_ip}",
+      
     ]
   }
 
