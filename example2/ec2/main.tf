@@ -6,8 +6,11 @@ resource "aws_instance" "b49-ec2" {
 
 
   provisioner "local-exec" {
-    command = "echo ${self.private_ip} >> private_ips.txt"
-  }
+    command = <<EOF 
+        
+  
+    EOF 
+   }
 
 }
 
